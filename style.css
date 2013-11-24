@@ -1,0 +1,270 @@
+/*
+Colours 
+-------
+yellow: #F7D600
+*/
+/* Primary text styles */
+h1, h2 {
+  text-align: center;
+  font-weight: 600; }
+
+h1 {
+  text-transform: uppercase; }
+
+p {
+  text-align: center;
+  font-size: 1.8em; }
+
+/* Nav */
+nav {
+  background-color: #e84736; }
+  nav ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border-right: 1px solid #fff; }
+  nav li {
+    display: table-cell;
+    border-left: 1px solid #fff; }
+  nav li:hover {
+    background-color: #fff;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear; }
+  nav a {
+    display: block;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff; }
+  nav a:hover {
+    text-decoration: none;
+    color: #e84736; }
+
+/* Elements */
+.button a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border: 5px solid #ffffff;
+  border-radius: 4px;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear; }
+.button a:hover {
+  color: #ffffff;
+  opacity: .5; }
+
+/* Header */
+header {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f7d600;
+  position: relative;
+  height: 720px; }
+  header .container {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    vertical-align: baseline;
+    height: 720px;
+    z-index: 10; }
+  header h1, header h2 {
+    font-weight: 600; }
+  header .player {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(judes.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .2;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear; }
+  header .player.active {
+    opacity: 1; }
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.block-outer {
+  display: table;
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.block-inner {
+  background-color: #ffffff;
+  height: 250px;
+  display: table-cell;
+  vertical-align: bottom; }
+  .block-inner h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: left; }
+  .block-inner h2 {
+    font-size: 1.4em;
+    text-align: left;
+    margin-top: 0; }
+
+.block-content {
+  padding: 1em;
+  background-color: #ffffff;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  opacity: 0.8; }
+
+.block-content:hover {
+  opacity: 0; }
+
+/* Purpose */
+.purpose {
+  background-color: #b7cbcd; }
+
+/* Conference */
+.conference {
+  background-color: #f6f2cd; }
+
+/* Speakers */
+.speakers {
+  background-color: #cfc1c1; }
+
+/* Seminars */
+.seminars {
+  background-color: #b7cbcd; }
+
+/* Schedule */
+.schedule {
+  background-color: #f6f2cd; }
+
+.schedule ul, .pricing ul {
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 0; }
+
+.schedule li {
+  background-color: #fff;
+  margin-bottom: .3em;
+  padding: .4em .5em; }
+
+/* Pricing */
+.pricing li {
+  margin-bottom: .3em;
+  padding: .4em .5em; }
+.pricing li:nth-child(odd) {
+  background-color: #b7cbcd; }
+.pricing li:nth-child(even) {
+  background-color: #ffffff; }
+.pricing ul.header, .pricing li.header, .pricing li.skip {
+  background-color: #ffffff; }
+
+/* Register */
+.register {
+  background-color: #e84736;
+  text-align: center;
+  text-transform: uppercase; }
+
+li.skip, ul.header-right {
+  display: none; }
+
+ul.header, li.header {
+  background-color: none; }
+
+.left, .left p {
+  text-align: left; }
+
+.right, .right p {
+  text-align: right; }
+
+.small, .small p {
+  font-size: 1.2em; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+h1.giant {
+  font-size: 3.6em; }
+
+h1 {
+  font-size: 2em; }
+
+header {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+  header h1 {
+    font-size: 7em;
+    letter-spacing: 0.02em; }
+  header h2 {
+    font-size: 2em;
+    letter-spacing: -0.02em;
+    margin-top: -20px;
+    margin-bottom: 120px; }
+
+.button a {
+  padding: 5px 15px;
+  font-size: 2em; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1.giant {
+    font-size: 6em;
+    letter-spacing: -0.03em; }
+
+  header {
+    padding-top: 60px;
+    padding-bottom: 40px; }
+    header h1 {
+      font-size: 10em; }
+    header .video-button {
+      margin-top: 200px; }
+
+  li.skip, li.header {
+    background: none;
+    display: list-item; }
+
+  ul.header-right {
+    display: block;
+    text-align: right; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .video-button {
+    margin-top: 300px; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header .video-button {
+    margin-top: 360px; } }
+/* Assets */
+#peter-adam {
+  background: url(peter-adam.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%); }
+
+#richard-condie {
+  background: url(richard-condie.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%); }

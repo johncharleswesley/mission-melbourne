@@ -1,0 +1,191 @@
+/*
+Colours 
+-------
+yellow: #F7D600
+
+
+*/
+
+
+
+/* Primary text styles */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Nav */
+nav {
+  background-color: #e84736;
+
+  ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border-right: 1px solid #fff;
+  }
+  
+  li {
+    display: table-cell;
+    border-left: 1px solid #fff;
+  }
+}
+
+nav 
+
+nav li:hover {
+  background-color: #fff;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+nav a {
+  display: block;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #e84736;
+}
+
+/* Header */
+
+header {
+  background-color: #f7d600;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 10em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+header h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: -20px;
+}
+
+.video-button {
+  margin-top: 60px;
+}
+
+.video-button a {
+  color: #ffffff;
+  text-decoration: none;
+  border: 5px solid #ffffff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 2em;
+  text-transform: uppecase;
+  font-weight: 500;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.video-button a:hover {
+  opacity: .5;
+  color: #ffffff;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.block-outer {
+  display: table;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.block-inner {
+  background-color: #ffffff;
+  height: 250px;
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 1em;
+}
+
+.block-inner h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: left;
+}
+
+.block-inner h2 {
+  font-size: 1.4em;
+  text-align: left;
+  margin-top: 0;
+}
+
+/* Purpose */
+
+.purpose {
+  background-color: #b7cbcd;
+}
+
+/* Conference */
+.conference {
+  background-color: #f6f2cd;
+}
+
+/* Speakers */
+.speakers {
+  background-color: #cfc1c1;
+}
+
+/* Sessions */
+.sessions {
+  background-color: #b7cbcd;
+}
+
+/* Schedule */
+.schedule {
+  background-color: #f6f2cd;
+}
+
+.schedule ul {
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.schedule li {
+  background-color: #fff;
+  margin-bottom: .3em;
+  padding: .4em .5em;
+}
+
+li.skip {
+  background: none;
+}
+
+
+
