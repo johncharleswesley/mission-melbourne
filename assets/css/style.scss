@@ -244,6 +244,16 @@ section {
     font-size: 1.8em;
     margin-top: 2em;
     margin-bottom: 2em;
+    
+    th {
+      padding: 0 10px;
+    }
+    
+    .info {
+      font-size: 0.9em;
+      font-weight: 400;
+    }
+    
   }
 
   ul {

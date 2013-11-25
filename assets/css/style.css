@@ -173,6 +173,11 @@ section {
   font-size: 1.8em;
   margin-top: 2em;
   margin-bottom: 2em; }
+  .pricing table th {
+    padding: 0 10px; }
+  .pricing table .info {
+    font-size: 0.9em;
+    font-weight: 400; }
 .pricing ul {
   list-style: none;
   font-size: 1.5em;
