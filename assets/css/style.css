@@ -5,10 +5,12 @@ yellow: #F7D600
 */
 /* Primary text styles */
 h1, h2 {
-  text-align: center;
+  text-align: center; }
+
+h1, h2, h3 {
   font-weight: 600; }
 
-h1 {
+h1, h3 {
   text-transform: uppercase; }
 
 p {
@@ -87,7 +89,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(judes.jpg) no-repeat center center;
+    background: url(../images/judes.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -131,7 +133,7 @@ section {
   opacity: 0.8; }
 
 .block-content:hover {
-  opacity: 0; }
+  opacity: 0.2; }
 
 /* Purpose */
 .purpose {
@@ -152,29 +154,38 @@ section {
 /* Schedule */
 .schedule {
   background-color: #f6f2cd; }
+  .schedule ul {
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 0; }
+  .schedule li {
+    background-color: #fff;
+    margin-bottom: .3em;
+    padding: .4em .5em; }
+  .schedule li.header {
+    background: none; }
 
-.schedule ul, .pricing ul {
+/* Pricing */
+.pricing table {
+  text-align: right;
+  font-size: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+.pricing ul {
   list-style: none;
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
   padding-left: 0; }
-
-.schedule li {
-  background-color: #fff;
-  margin-bottom: .3em;
-  padding: .4em .5em; }
-
-/* Pricing */
 .pricing li {
   margin-bottom: .3em;
   padding: .4em .5em; }
-.pricing li:nth-child(odd) {
+.pricing li.highlight {
   background-color: #b7cbcd; }
-.pricing li:nth-child(even) {
-  background-color: #ffffff; }
 .pricing ul.header, .pricing li.header, .pricing li.skip {
-  background-color: #ffffff; }
+  background-color: none; }
 
 /* Register */
 .register {
@@ -205,6 +216,9 @@ h1.giant {
 h1 {
   font-size: 2em; }
 
+h3 {
+  letter-spacing: -0.02em; }
+
 header {
   padding-top: 60px;
   padding-bottom: 40px; }
@@ -233,7 +247,11 @@ header {
     header h1 {
       font-size: 10em; }
     header .video-button {
-      margin-top: 200px; }
+      margin-top: 200px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header .video-button {
+    margin-top: 300px; }
 
   li.skip, li.header {
     background: none;
@@ -242,17 +260,13 @@ header {
   ul.header-right {
     display: block;
     text-align: right; } }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  header .video-button {
-    margin-top: 300px; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   header .video-button {
     margin-top: 360px; } }
 /* Assets */
 #peter-adam {
-  background: url(peter-adam.png) no-repeat center center;
+  background: url(../images/peter-adam.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -261,10 +275,50 @@ header {
   filter: grayscale(40%); }
 
 #richard-condie {
-  background: url(richard-condie.jpg) no-repeat center center;
+  background: url(../images/richard-condie.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-filter: grayscale(40%);
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
+
+@media (max-width: 768px) {
+  table {
+    border: 0;
+    padding-bottom: 0;
+    display: block;
+    width: 100%; }
+    table caption {
+      display: block; }
+    table thead {
+      display: none;
+      visibility: hidden; }
+    table tbody, table tr, table th, table td {
+      border: 0;
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal; }
+    table tr {
+      margin-bottom: 1.5em; }
+    table th[data-title]:before,
+    table td[data-title]:before {
+      content: attr(data-title) ":\00A0";
+      font-weight: bold; }
+    table th:not([data-title]) {
+      font-weight: bold; }
+    table td:empty {
+      display: none; }
+
+  .package th {
+    font-size: 1.6em;
+    text-transform: uppercase; }
+  .package td {
+    text-align: right; }
+  .package td:before {
+    position: absolute;
+    left: 16px;
+    text-align: left; }
+  .package td:after {
+    content: '.00'; } }
