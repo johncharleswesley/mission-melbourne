@@ -7,6 +7,10 @@ yellow: #F7D600
 $red: #e84736;
 $blue: #b7cbcd;
 
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
 /* Primary text styles */
 h1, h2 {
   text-align: center;
