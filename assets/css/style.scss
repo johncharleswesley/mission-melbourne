@@ -431,6 +431,54 @@ header {
   filter: grayscale(40%);
 }
 
+#poverty {
+  background: url(../images/poverty.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#asylum {
+  background: url(../images/asylum.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#environment {
+  background: url(../images/environment.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#indigenous {
+  background: url(../images/indigenous.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
 
 @media (max-width: 768px) {
   // make each table separate from other ones
