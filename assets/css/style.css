@@ -247,7 +247,7 @@ header {
     letter-spacing: -0.03em; }
 
   header {
-    height: 720px;
+    height: 480px;
     padding-top: 60px;
     padding-bottom: 40px; }
     header h1 {
@@ -256,8 +256,10 @@ header {
       margin-top: 200px; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  header .video-button {
-    margin-top: 300px; }
+  header {
+    height: 720px; }
+    header .video-button {
+      margin-top: 300px; }
 
   li.skip, li.header {
     background: none;
@@ -268,8 +270,10 @@ header {
     text-align: right; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  header .video-button {
-    margin-top: 360px; } }
+  header {
+    height: 1080px; }
+    header .video-button {
+      margin-top: 360px; } }
 /* Assets */
 #peter-adam {
   background: url(../images/peter-adam.png) no-repeat center center;

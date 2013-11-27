@@ -366,7 +366,7 @@ header {
 
   header {
   
-    height: 720px;
+    height: 480px;
     
     padding-top: 60px;
     padding-bottom: 40px;
@@ -386,6 +386,9 @@ header {
 @media (min-width: 992px) {
 
   header {
+  
+    height: 720px;
+    
     .video-button {
       margin-top: 300px;
     }
@@ -407,6 +410,9 @@ header {
 @media (min-width: 1200px) {
 
   header {
+  
+    height: 1080px;
+    
     .video-button {
       margin-top: 360px;
     }
