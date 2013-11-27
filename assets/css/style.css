@@ -1,14 +1,12 @@
-/*
-Colours 
--------
-yellow: #F7D600
-*/
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 /* Primary text styles */
 h1, h2 {
   text-align: center; }
 
 h1, h2, h3 {
-  font-weight: 600; }
+  font-weight: 700; }
 
 h1, h3 {
   text-transform: uppercase; }
@@ -25,20 +23,15 @@ nav {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    width: 100%;
-    border-right: 1px solid #fff; }
+    width: 100%; }
   nav li {
-    display: table-cell;
-    border-left: 1px solid #fff; }
-  nav li:hover {
-    background-color: #fff;
-    -webkit-transition: background-color 0.2s linear;
-    -moz-transition: background-color 0.2s linear;
-    transition: background-color 0.2s linear; }
+    display: none; }
+  nav li#register-menu {
+    display: table-cell; }
   nav a {
     display: block;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.06em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -53,7 +46,7 @@ nav {
 /* Elements */
 .button a {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   border: 5px solid #ffffff;
   border-radius: 4px;
@@ -71,7 +64,7 @@ header {
   text-transform: uppercase;
   background-color: #f7d600;
   position: relative;
-  height: 720px; }
+  height: 200px; }
   header .container {
     position: absolute;
     top: 0px;
@@ -82,7 +75,7 @@ header {
     height: 720px;
     z-index: 10; }
   header h1, header h2 {
-    font-weight: 600; }
+    font-weight: 700; }
   header .player {
     position: absolute;
     top: 0;
@@ -157,7 +150,7 @@ section {
   .schedule ul {
     list-style: none;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     padding-left: 0; }
   .schedule li {
@@ -181,7 +174,7 @@ section {
 .pricing ul {
   list-style: none;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   padding-left: 0; }
 .pricing li {
@@ -215,9 +208,6 @@ ul.header, li.header {
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-h1.giant {
-  font-size: 3.6em; }
-
 h1 {
   font-size: 2em; }
 
@@ -228,11 +218,10 @@ header {
   padding-top: 60px;
   padding-bottom: 40px; }
   header h1 {
-    font-size: 7em;
-    letter-spacing: 0.02em; }
+    font-size: 5em; }
   header h2 {
     font-size: 2em;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
     margin-top: -20px;
     margin-bottom: 120px; }
 
@@ -242,11 +231,23 @@ header {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  nav li {
+    display: table-cell;
+    border-left: 1px solid #fff; }
+  nav ul {
+    border-right: 1px solid #fff; }
+  nav li:hover {
+    background-color: #fff;
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear; }
+
   h1.giant {
     font-size: 6em;
     letter-spacing: -0.03em; }
 
   header {
+    height: 720px;
     padding-top: 60px;
     padding-bottom: 40px; }
     header h1 {
@@ -317,6 +318,33 @@ header {
 
 #indigenous {
   background: url(../images/indigenous.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%); }
+
+#materialism {
+  background: url(../images/materialism.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%); }
+
+#marriage {
+  background: url(../images/marriage.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%); }
+
+#economics {
+  background: url(../images/economics.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
