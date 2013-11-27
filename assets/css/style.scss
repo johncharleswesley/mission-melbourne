@@ -1,11 +1,6 @@
-/*
-Colours 
--------
-yellow: #F7D600
-*/
-
 $red: #e84736;
 $blue: #b7cbcd;
+$yello: #f7d600;
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
@@ -39,12 +34,14 @@ nav {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    border-right: 1px solid #fff;
   }
   
   li {
+    display: none;
+  }
+  
+  li#register-menu {
     display: table-cell;
-    border-left: 1px solid #fff;
   }
   
   li:hover {
@@ -104,7 +101,7 @@ header {
   background-color: #f7d600;
   
   position: relative;
-  height: 720px;
+  height: 200px;
   
   .container {
     position: absolute;
@@ -316,10 +313,6 @@ ul.header, li.header {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-h1.giant {
-  font-size: 3.6em;
-}
-
 h1 {
   font-size: 2em;
 }
@@ -333,13 +326,12 @@ header {
   padding-bottom: 40px;
 
   h1 {
-    font-size: 7em;
-    letter-spacing: 0.02em;
+    font-size: 5em;
   }
 
   h2 {
     font-size: 2em;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.05em;
     margin-top: -20px;
     margin-bottom: 120px;
   }
@@ -355,6 +347,18 @@ header {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  nav {
+    li {
+      display: table-cell;
+      border-left: 1px solid #fff;
+    }
+    
+    ul {
+      border-right: 1px solid #fff;
+    }
+  }
+  
+
   h1.giant {
     font-size: 6em;
     letter-spacing: -0.03em;
@@ -362,6 +366,8 @@ header {
 
   header {
   
+    height: 720px;
+    
     padding-top: 60px;
     padding-bottom: 40px;
     
@@ -473,6 +479,42 @@ header {
 
 #indigenous {
   background: url(../images/indigenous.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#materialism {
+  background: url(../images/materialism.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#marriage {
+  background: url(../images/marriage.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#economics {
+  background: url(../images/economics.jpg) no-repeat center center;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
