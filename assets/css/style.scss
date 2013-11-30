@@ -1,6 +1,6 @@
 $red: #e84736;
 $blue: #b7cbcd;
-$yello: #f7d600;
+$yellow: #f7d600;
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
@@ -57,7 +57,7 @@ nav {
     color: #fff;
   }
   
-  a:hover {
+  a:active, a:hover {
     text-decoration: none;
     color: #e84736;
   }
@@ -79,7 +79,7 @@ nav {
     transition: opacity 0.2s linear;
   }
   
-  a:hover {
+  a:active, a:hover {
     color: #ffffff;
     opacity: .5;
   }  
@@ -137,6 +137,14 @@ header {
   }
 }
 
+footer {
+  background-color: #000;
+  padding: 1em;
+  
+  color: #fff;
+  font-size: 0.92em;
+}
+
 section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -165,6 +173,7 @@ section {
     font-size: 1.4em;
     text-align: left;
     margin-top: 0;
+    display: none;
   }
 }
 
@@ -172,16 +181,11 @@ section {
   padding: 1em;
   
   background-color: #ffffff;
-  
-  -webkit-transition: opacity 0.2s linear;
-  -moz-transition: opacity 0.2s linear;
-  transition: opacity 0.2s linear;
-  
   opacity: 0.8;
 }
 
-.block-content:hover {
-  opacity: 0.2;
+.block-inner:active h2, .block-inner:hover h2 {
+  display: block;
 }
 
 /* Purpose */
@@ -301,7 +305,18 @@ ul.header, li.header {
   font-size: 1.2em;
 }
 
+/* Questions */
+.questions {
+  background-color: lighten($yellow, 20%);
+}
 
+/* Sponsors */
+.sponsors {
+  .logo-list div[class^='col-'] {
+    text-align: center;
+    padding: 2em;
+  }
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -350,7 +365,7 @@ header {
       border-right: 1px solid #fff;
     }
     
-    li:hover {
+    li:hover, li:active {
       background-color: #fff;
       -webkit-transition: background-color 0.2s linear;
       -moz-transition: background-color 0.2s linear;
@@ -410,8 +425,6 @@ header {
 @media (min-width: 1200px) {
 
   header {
-  
-    height: 1080px;
     
     .video-button {
       margin-top: 360px;
@@ -424,7 +437,7 @@ header {
 
 /* Assets */
 #peter-adam {
-  background: url(../images/peter-adam.png) no-repeat center center;
+  background: url(../images/peter-adam.jpg) no-repeat center center;
   
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -507,17 +520,17 @@ header {
   filter: grayscale(40%);
 }
 
-#marriage {
-  background: url(../images/marriage.jpg) no-repeat center center;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  -webkit-filter: grayscale(40%);
-  -moz-filter: grayscale(40%);
-  filter: grayscale(40%);
-}
+// #marriage {
+//   background: url(../images/marriage.jpg) no-repeat center center;
+// 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+// 
+//   -webkit-filter: grayscale(40%);
+//   -moz-filter: grayscale(40%);
+//   filter: grayscale(40%);
+// }
 
 #economics {
   background: url(../images/economics.jpg) no-repeat center center;
@@ -529,6 +542,51 @@ header {
   -webkit-filter: grayscale(40%);
   -moz-filter: grayscale(40%);
   filter: grayscale(40%);
+}
+
+#religion {
+  background: url(../images/mosque.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#workplace {
+  background: url(../images/workplace.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#mission {
+  background: url(../images/mission.jpg) no-repeat center center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  filter: grayscale(40%);
+}
+
+#big-more, #ministry-more {
+  background: none;
+  background: url(../images/coming-soon.png) no-repeat center center;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 
