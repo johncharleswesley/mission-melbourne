@@ -13,7 +13,9 @@ h1, h3 {
 
 p {
   text-align: center;
-  font-size: 1.8em; }
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 300; }
 
 /* Nav */
 nav {
@@ -42,6 +44,15 @@ nav {
   nav a:active, nav a:hover {
     text-decoration: none;
     color: #e84736; }
+  nav .back {
+    text-align: left;
+    border-left: 1px #fff solid;
+    border-right: 1px #fff solid;
+    padding-left: 2em; }
+  nav .back:hover {
+    text-decoration: none;
+    color: #e84736;
+    background-color: #fff; }
 
 /* Elements */
 .button a {
@@ -147,6 +158,15 @@ section {
 /* Seminars */
 .seminars {
   background-color: #b7cbcd; }
+
+.seminar-detail {
+  border-bottom: 1px #ccc solid;
+  padding: 32px 0; }
+  .seminar-detail h1, .seminar-detail h2, .seminar-detail h3, .seminar-detail p {
+    text-align: left; }
+  .seminar-detail h2 {
+    font-weight: 400;
+    font-size: 1.7em; }
 
 /* Schedule */
 .schedule {
@@ -288,7 +308,7 @@ header {
     header .video-button {
       margin-top: 360px; } }
 /* Assets */
-#peter-adam {
+.block-inner#peter-adam {
   background: url(../images/peter-adam.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -297,7 +317,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#richard-condie {
+.block-inner#richard-condie {
   background: url(../images/richard-condie.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -306,7 +326,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#poverty {
+.block-inner#poverty {
   background: url(../images/poverty.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -315,7 +335,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#asylum {
+.block-inner#asylum {
   background: url(../images/asylum.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -324,7 +344,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#environment {
+.block-inner#environment {
   background: url(../images/environment.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -333,7 +353,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#indigenous {
+.block-inner#indigenous {
   background: url(../images/indigenous.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -342,7 +362,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#materialism {
+.block-inner#materialism {
   background: url(../images/materialism.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -351,7 +371,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#economics {
+.block-inner#economics {
   background: url(../images/economics.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -360,7 +380,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#religion {
+.block-inner#religion {
   background: url(../images/mosque.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -369,7 +389,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#workplace {
+.block-inner#workplace {
   background: url(../images/workplace.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -378,7 +398,7 @@ header {
   -moz-filter: grayscale(40%);
   filter: grayscale(40%); }
 
-#mission {
+.block-inner#mission {
   background: url(../images/mission.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
