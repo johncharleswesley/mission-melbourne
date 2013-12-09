@@ -1,0 +1,9 @@
+# Expire after 4 weeks
+<FilesMatch "\.(jpg|png|js)$">
+Header set Cache-Control "max-age=2419200, public, must-revalidate"
+</FilesMatch>
+
+# Expire after 2 hours
+<FilesMatch "\.(html|css)$">
+Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
