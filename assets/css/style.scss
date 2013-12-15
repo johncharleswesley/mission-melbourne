@@ -222,6 +222,11 @@ section {
 /* Seminars */
 .seminars {
   background-color: $blue;
+  
+  a {
+    color: rgb(51,51,51);
+    text-decoration: none;
+  }
 }
 
 .seminar-detail {
