@@ -158,6 +158,9 @@ section {
 /* Seminars */
 .seminars {
   background-color: #b7cbcd; }
+  .seminars a {
+    color: #333333;
+    text-decoration: none; }
 
 .seminar-detail {
   border-bottom: 1px #ccc solid;
@@ -167,6 +170,11 @@ section {
   .seminar-detail h2 {
     font-weight: 400;
     font-size: 1.7em; }
+  .seminar-detail .reading {
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 2px 10px;
+    margin-right: 4px; }
 
 /* Schedule */
 .schedule {
