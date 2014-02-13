@@ -132,16 +132,12 @@ section {
   .block-inner h2 {
     font-size: 1.4em;
     text-align: left;
-    margin-top: 0;
-    display: none; }
+    margin-top: 0; }
 
 .block-content {
   padding: 1em;
   background-color: #ffffff;
   opacity: 0.8; }
-
-.block-inner:active h2, .block-inner:hover h2 {
-  display: block; }
 
 /* Purpose */
 .purpose {
@@ -150,6 +146,9 @@ section {
 /* Conference */
 .conference {
   background-color: #f6f2cd; }
+  .conference a {
+    color: #333333;
+    text-decoration: none; }
 
 /* Speakers */
 .speakers {
@@ -276,7 +275,7 @@ header {
     border-left: 1px solid #fff; }
   nav ul {
     border-right: 1px solid #fff; }
-  nav li:hover, nav li:active {
+  nav li:hover {
     background-color: #fff;
     -webkit-transition: background-color 0.2s linear;
     -moz-transition: background-color 0.2s linear;
