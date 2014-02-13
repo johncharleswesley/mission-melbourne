@@ -188,7 +188,6 @@ section {
     font-size: 1.4em;
     text-align: left;
     margin-top: 0;
-    display: none;
   }
 }
 
@@ -197,10 +196,6 @@ section {
   
   background-color: #ffffff;
   opacity: 0.8;
-}
-
-.block-inner:active h2, .block-inner:hover h2 {
-  display: block;
 }
 
 /* Purpose */
@@ -212,6 +207,11 @@ section {
 /* Conference */
 .conference {
   background-color: #f6f2cd;
+  
+  a {
+    color: rgb(51,51,51);
+    text-decoration: none;
+  }
 }
 
 /* Speakers */
@@ -406,7 +406,7 @@ header {
       border-right: 1px solid #fff;
     }
     
-    li:hover, li:active {
+    li:hover {
       background-color: #fff;
       -webkit-transition: background-color 0.2s linear;
       -moz-transition: background-color 0.2s linear;
