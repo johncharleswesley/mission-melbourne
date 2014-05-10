@@ -1,5 +1,6 @@
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "pragmatica-web", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  color: #fff;}
 
 /* Primary text styles */
 h1, h2 {
@@ -16,10 +17,15 @@ p {
   font-size: 1.5em;
   line-height: 1.7em;
   font-weight: 300; }
-
+a {
+  color: #f6f2cd; 
+  text-decoration: underline;}
+  a:active, a:hover {
+    text-decoration: underline;
+    color: #ffe95e; }  
 /* Nav */
 nav {
-  background-color: #e84736; }
+  background-color: #990000; }
   nav ul {
     display: table;
     list-style: none;
@@ -43,7 +49,7 @@ nav {
     color: #fff; }
   nav a:active, nav a:hover {
     text-decoration: none;
-    color: #e84736; }
+    color: #990000; }
   nav .back {
     text-align: left;
     border-left: 1px #fff solid;
@@ -51,7 +57,7 @@ nav {
     padding-left: 2em; }
   nav .back:hover {
     text-decoration: none;
-    color: #e84736;
+    color: #990000;
     background-color: #fff; }
 
 /* Elements */
@@ -70,10 +76,10 @@ nav {
 
 /* Header */
 header {
-  color: #ffffff;
+  /*color: #ffffff;*/
   text-align: center;
   text-transform: uppercase;
-  background-color: #f7d600;
+  /*background-color: #f7d600;*/
   position: relative;
   height: 200px; }
   header .container {
@@ -93,20 +99,20 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(../images/judes.jpg) no-repeat center center;
+    background: url(../images/mission-melbourne.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: .2;
+    /*opacity: .2;
     -webkit-transition: opacity 0.2s linear;
     -moz-transition: opacity 0.2s linear;
-    transition: opacity 0.2s linear; }
+    transition: opacity 0.2s linear; */}
   header .player.active {
     opacity: 1; }
 
 footer {
-  background-color: #000;
+  background-color: #004587;
   padding: 1em;
   color: #fff;
   font-size: 0.92em; }
@@ -121,7 +127,7 @@ section {
   padding-top: 15px; }
 
 .block-inner {
-  background-color: #ffffff;
+  background-color: #990000;
   height: 250px;
   display: table-cell;
   vertical-align: bottom; }
@@ -136,32 +142,33 @@ section {
 
 .block-content {
   padding: 1em;
-  background-color: #ffffff;
+  background-color: #990000;
   opacity: 0.8; }
 
 /* Purpose */
 .purpose {
-  background-color: #b7cbcd; }
+  background-color: #8ce0a2; }
 
 /* Conference */
 .conference {
-  background-color: #f6f2cd; }
+  background-color: #0098d8; }
   .conference a {
     color: #333333;
     text-decoration: none; }
 
 /* Speakers */
 .speakers {
-  background-color: #cfc1c1; }
+  background-color: #004587; }
 
 /* Seminars */
 .seminars {
-  background-color: #b7cbcd; }
+  background-color: #8ce0a2; }
   .seminars a {
     color: #333333;
     text-decoration: none; }
 
 .seminar-detail {
+  background-color: #0098d8; 
   border-bottom: 1px #ccc solid;
   padding: 32px 0; }
   .seminar-detail h1, .seminar-detail h2, .seminar-detail h3, .seminar-detail p {
@@ -170,14 +177,14 @@ section {
     font-weight: 400;
     font-size: 1.7em; }
   .seminar-detail .reading {
-    background-color: #ccc;
+    background-color: #990000;
     border-radius: 4px;
     padding: 2px 10px;
     margin-right: 4px; }
 
 /* Schedule */
 .schedule {
-  background-color: #f6f2cd; }
+  background-color: #0098d8; }
   .schedule ul {
     list-style: none;
     font-size: 1.5em;
@@ -185,13 +192,15 @@ section {
     text-transform: uppercase;
     padding-left: 0; }
   .schedule li {
-    background-color: #fff;
+    background-color: #990000;
     margin-bottom: .3em;
     padding: .4em .5em; }
   .schedule li.header {
     background: none; }
 
 /* Pricing */
+.pricing {
+  background-color: #004587; }
 .pricing table {
   text-align: right;
   font-size: 1.8em;
@@ -212,13 +221,13 @@ section {
   margin-bottom: .3em;
   padding: .4em .5em; }
 .pricing li.highlight {
-  background-color: #b7cbcd; }
+  background-color: #8ce0a2; }
 .pricing ul.header, .pricing li.header, .pricing li.skip {
   background-color: none; }
 
 /* Register */
 .register {
-  background-color: #e84736;
+  background-color: #990000;
   text-align: center;
   text-transform: uppercase; }
 
@@ -239,9 +248,11 @@ ul.header, li.header {
 
 /* Questions */
 .questions {
-  background-color: #ffe95e; }
+  background-color: #0092d3; }
 
 /* Sponsors */
+.sponsors {
+  background-color: #8ce0a2; }
 .sponsors .logo-list div[class^='col-'] {
   text-align: center;
   padding: 2em; }
