@@ -80,16 +80,16 @@ header {
   text-align: center;
   text-transform: uppercase;
   /*background-color: #f7d600;*/
-  position: relative;
-  height: 200px; }
+  /*position: relative;*/
+  /*height: 200px;*/ }
   header .container {
-    position: absolute;
+    /*position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    right: 0px; */
     vertical-align: baseline;
-    height: 720px;
+    /*height: 720px;*/
     z-index: 10; }
   header h1, header h2 {
     font-weight: 700; }
@@ -99,7 +99,7 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(../images/mission-melbourne.png) no-repeat center center;
+    background: url(../images/banner.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,8 +118,8 @@ footer {
   font-size: 0.92em; }
 
 section {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .block-outer {
   display: table;
@@ -145,19 +145,19 @@ section {
   background-color: #990000;
   opacity: 0.8; }
 
-/* Purpose */
-.purpose {
-  background-color: #8ce0a2; }
+/* intro */
+.intro {
+  background-color: #000000; }
 
-/* Conference */
-.conference {
+/* goal */
+.goal {
   background-color: #0098d8; }
-  .conference a {
+  .goal a {
     color: #333333;
     text-decoration: none; }
 
-/* Speakers */
-.speakers {
+/* Involvement */
+.involvement {
   background-color: #004587; }
 
 /* Seminars */
@@ -322,10 +322,11 @@ header {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   header {
-    padding-top: 240px; }
+    /*padding-top: 50px;*/ }
     header .video-button {
       margin-top: 360px; } }
 /* Assets */
+
 .block-inner#peter-adam {
   background: url(../images/peter-adam.jpg) no-repeat center center;
   -webkit-background-size: cover;
@@ -471,3 +472,20 @@ header {
     text-align: left; }
   .package td:after {
     content: '.00'; } }
+
+.video-container { 
+	position: relative;
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: 
+	hidden; 
+} 
+.video-container iframe, .video-container object, .video-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
