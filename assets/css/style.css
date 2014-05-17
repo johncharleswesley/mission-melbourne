@@ -112,7 +112,7 @@ header {
     opacity: 1; }
 
 footer {
-  background-color: #004587;
+  background-color: #4D7DAB;
   padding: 1em;
   color: #fff;
   font-size: 0.92em; }
@@ -136,14 +136,17 @@ section {
     font-size: 2em;
     text-align: left; }
   .block-inner h2 {
+	color:#fff;
     font-size: 1.4em;
     text-align: left;
-    margin-top: 0; }
+    margin-top: 0;
+color: #ffffff !important;	}
 
 .block-content {
   padding: 1em;
   background-color: #990000;
   opacity: 0.8; }
+
 
 /* intro */
 .intro {
@@ -151,14 +154,22 @@ section {
 
 /* goal */
 .goal {
-  background-color: #0098d8; }
+  background-color: #85CDED; }
   .goal a {
     color: #333333;
     text-decoration: none; }
+	
+	}
+
+	
+	#vision  p {
+	color: #ffffff;
+	}
 
 /* Involvement */
 .involvement {
-  background-color: #004587; }
+  background-color: #4D7DAB; }
+  
 
 /* Seminars */
 .seminars {
@@ -168,7 +179,7 @@ section {
     text-decoration: none; }
 
 .seminar-detail {
-  background-color: #0098d8; 
+  background-color: #85CDED; 
   border-bottom: 1px #ccc solid;
   padding: 32px 0; }
   .seminar-detail h1, .seminar-detail h2, .seminar-detail h3, .seminar-detail p {
@@ -184,7 +195,7 @@ section {
 
 /* Schedule */
 .schedule {
-  background-color: #0098d8; }
+  background-color: #85CDED; }
   .schedule ul {
     list-style: none;
     font-size: 1.5em;
@@ -200,7 +211,7 @@ section {
 
 /* Pricing */
 .pricing {
-  background-color: #004587; }
+  background-color: #4D7DAB; }
 .pricing table {
   text-align: right;
   font-size: 1.8em;
@@ -224,6 +235,8 @@ section {
   background-color: #8ce0a2; }
 .pricing ul.header, .pricing li.header, .pricing li.skip {
   background-color: none; }
+  
+
 
 /* Register */
 .register {
@@ -489,3 +502,7 @@ header {
 	height: 100%; 
 }
 
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
