@@ -112,7 +112,7 @@ header {
     opacity: 1; }
 
 footer {
-  background-color: #4D7DAB;
+  background-color: #000000;
   padding: 1em;
   color: #fff;
   font-size: 0.92em; }
@@ -155,16 +155,16 @@ color: #ffffff !important;	}
 /* goal */
 .goal {
   background-color: #85CDED; }
-  .goal a {
+
+.badge a {
     color: #333333;
     text-decoration: none; }
-	
-	}
+.badge a:active, a:hover {
+    text-decoration: underline;
+    color: #ffe95e; }
 
-	
-	#vision  p {
-	color: #ffffff;
-	}
+#vision  p {
+	color: #ffffff; }
 
 /* Involvement */
 .involvement {
@@ -211,7 +211,7 @@ color: #ffffff !important;	}
 
 /* Pricing */
 .pricing {
-  background-color: #4D7DAB; }
+  background-color: #85CDED; }
 .pricing table {
   text-align: right;
   font-size: 1.8em;
